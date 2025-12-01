@@ -24,6 +24,12 @@ if __name__ == "__main__":
         print_df(client.get_security_bars(MARKET.SH, '999999', KLINE_TYPE.DAY_K, 0, 2000))
 ```
 
+编译 wheel
+```
+pip install -r requirements.txt
+python setup.py sdist bdist_wheel
+```
+
 ### 🌟 本项目亮点
 
   - ✅ **整体重构**：更加简洁易读
