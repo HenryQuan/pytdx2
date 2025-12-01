@@ -13,6 +13,7 @@
 ### 🚀 1分钟快速上手
 ```python
 # 示例代码（基于tdxClient.py）
+# 参考 demo/__main__.py
 if __name__ == "__main__":
     client = TdxClient()
     if client.connect().login():
