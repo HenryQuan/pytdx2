@@ -1,5 +1,5 @@
 import struct
-from typing import override
+from utils.compatibility import override
 from const import MARKET
 from parser.baseparser import BaseParser, register_parser
 import six

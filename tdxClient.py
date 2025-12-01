@@ -1,8 +1,9 @@
 from datetime import date
 import math
 import threading
+import pprint
 from time import time
-from typing import override
+from utils.compatibility import override
 from baseStockClient import BaseStockClient, update_last_ack_time
 from utils.block_reader import BlockReader, BlockReader_TYPE_FLAT
 from utils.log import log
@@ -276,12 +277,10 @@ def to_df(v):
     else:
         return pd.DataFrame(data=[{'value': v}])
 
+def print_df(data):
+    pprint.pprint(to_df(data))
+
 if __name__ == "__main__":
-    import pprint
-
-    def print_df(data):
-        pprint.pprint(to_df(data))
-
     client = TdxClient()
     if client.connect("122.51.232.182").login():
         log.info("心跳包")
