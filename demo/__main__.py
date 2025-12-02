@@ -1,7 +1,7 @@
-from tdxClient import TdxClient, print_df
-from utils.log import log
-from parser import stock
-from const import CATEGORY, MARKET, KLINE_TYPE
+from pytdx2.tdxClient import TdxClient, print_df
+from pytdx2.utils.log import log
+from pytdx2.parser import stock
+from pytdx2.const import CATEGORY, MARKET, KLINE_TYPE
 from .tickers import tickers
 from time import time
 

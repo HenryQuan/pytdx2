@@ -1,7 +1,7 @@
 import struct
-from utils.compatibility import override
-from const import BLOCK_FILE_TYPE
-from parser.baseparser import BaseParser, register_parser
+from ..utils.compatibility import override
+from ..const import BLOCK_FILE_TYPE
+from .baseparser import BaseParser, register_parser
 import six
 
 # iwshop/1_600009.htm

@@ -1,9 +1,9 @@
 from datetime import date, datetime
 import struct
-from utils.compatibility import override
+from ..utils.compatibility import override
 
-from utils.log import log
-from parser.baseparser import BaseParser, register_parser
+from ..utils.log import log
+from .baseparser import BaseParser, register_parser
 
 
 # >0c 07189500 01 0200 0200 |0200

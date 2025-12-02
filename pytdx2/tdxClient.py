@@ -3,13 +3,13 @@ import math
 import threading
 import pprint
 from time import time
-from utils.compatibility import override
-from baseStockClient import BaseStockClient, update_last_ack_time
-from utils.block_reader import BlockReader, BlockReader_TYPE_FLAT
-from utils.log import log
-from const import BLOCK_FILE_TYPE, CATEGORY, KLINE_TYPE, MARKET, tdx_hosts
-from parser import stock, server, company_info, block
-from parser.baseparser import BaseParser
+from .utils.compatibility import override
+from .baseStockClient import BaseStockClient, update_last_ack_time
+from .utils.block_reader import BlockReader, BlockReader_TYPE_FLAT
+from .utils.log import log
+from .const import BLOCK_FILE_TYPE, CATEGORY, KLINE_TYPE, MARKET, tdx_hosts
+from .parser import stock, server, company_info, block
+from .parser.baseparser import BaseParser
 
 import pandas as pd
 

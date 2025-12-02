@@ -1,9 +1,9 @@
 import struct
-from utils.compatibility import override
-from const import MARKET
-from parser.baseparser import BaseParser, register_parser
+from ..utils.compatibility import override
+from ..const import MARKET
+from .baseparser import BaseParser, register_parser
 import six
-from utils.help import to_datetime
+from ..utils.help import to_datetime
 
 @register_parser(0x2cf)
 class Category(BaseParser):

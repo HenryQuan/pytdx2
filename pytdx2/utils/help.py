@@ -4,8 +4,8 @@ from datetime import datetime
 import struct
 import six
 
-from const import MARKET
-from utils.log import log
+from ..const import MARKET
+from .log import log
 
 def query_market(code) -> MARKET:
     """

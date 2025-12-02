@@ -1,11 +1,11 @@
 from datetime import date
-from utils.log import log
-from const import CATEGORY, KLINE_TYPE, MARKET
-from parser.baseparser import BaseParser, register_parser
+from ..utils.log import log
+from ..const import CATEGORY, KLINE_TYPE, MARKET
+from .baseparser import BaseParser, register_parser
 import struct
-from utils.compatibility import override
+from ..utils.compatibility import override
 import six
-from utils.help import to_datetime, get_price, get_time
+from ..utils.help import to_datetime, get_price, get_time
 
 @register_parser(0x52d)
 class Bars(BaseParser):
