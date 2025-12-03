@@ -6,6 +6,6 @@
 try:
     from utils.compatibility import override
 except ImportError:
-    print("override 只在 Python 3.12 及以上版本可用，低版本将定义一个空的 override 装饰器。")
+    # print("override 只在 Python 3.12 及以上版本可用，低版本将定义一个空的 override 装饰器。")
     def override(method):
         return method
